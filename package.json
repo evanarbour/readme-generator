@@ -1,0 +1,22 @@
+{
+  "name": "readme-generator",
+  "version": "1.0.0",
+  "description": "\"This application generates a high quality README file via terminal prompts\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/evanarbour/readme-generator.git"
+  },
+  "author": "\"Evan Arbour\"",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/evanarbour/readme-generator/issues"
+  },
+  "homepage": "https://github.com/evanarbour/readme-generator#readme",
+  "dependencies": {
+    "inquirer": "^8.1.2"
+  }
+}
