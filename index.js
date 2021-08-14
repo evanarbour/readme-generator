@@ -1,14 +1,14 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 
-// generateReadMe function with Readme.md template 
+// generateReadMe with function using inputs from user and Readme.md template 
 const generateReadMe = (answers) =>
 `# ${answers.title}
 ## Description
 ${answers.why}
 ${answers.problem}
 ## Badges
-HOW TO MAKE BADGES HERE??
+[![License: ${answers.license}](https://img.shields.io/badge/License-${answers.license}-yellow.svg)](https://opensource.org/licenses/${answers.license})
 ## Table of Contents
 - [Installation](#installation)
 - [Usage](#usage)
@@ -21,7 +21,7 @@ ${answers.install}
 ## Usage
 ${answers.usage}
 ## License
-${answers.license}
+This project is licensed under the terms of the ${answers.license} license.
 ## Contributing
 ${answers.contribute}
 ## Tests
@@ -31,6 +31,7 @@ Connect with me on [Github](https://github.com/${answers.github})
 or send me an email: ${answers.email}
 Looking forward to hearing from you!`
 
+// using Inquirer to gather user input for README
 inquirer
     .prompt([
         {
@@ -62,7 +63,7 @@ inquirer
             type: 'list',
             name: 'license',
             message: 'Choose a License for your application:',
-            choices: ['GNU', 'GPLv3', 'MIT', 'Unlicense'],
+            choices: ['BSD', 'MIT', 'GPL'],
         },
         {
             type: 'input',
@@ -85,6 +86,8 @@ inquirer
             message: 'Enter your email address',
         }, 
     ])
+
+    // take the answers, put them into the README template, and write the file
     .then((answers) => {
         const readMePage = generateReadMe(answers);
 
