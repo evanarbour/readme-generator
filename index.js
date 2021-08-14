@@ -27,8 +27,10 @@ ${answers.contribute}
 ## Tests
 ${answers.test}
 ## Questions
-Connect with me on [Github](https://github.com/${answers.github})
-or send me an email: ${answers.email}
+Questions about the project? Connect with me!
+- Find me on: [Github](https://github.com/${answers.github})
+- Send me an e-mail: ${answers.email}
+
 Looking forward to hearing from you!`
 
 // using Inquirer to gather user input for README
