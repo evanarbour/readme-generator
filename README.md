@@ -22,6 +22,11 @@ This project is licensed under the terms of the MIT license.
 
 ## Functionality
 
+A [video walkthrough](https://drive.google.com/file/d/1MpfUK16CzXg2U3STU45aJYBMY2mH_x1k/view) of the usage of the application.
+
+A sample README file generated using the application:
+![screenshot of application](./assets/images/readmegenerator-ss.png)
+
 ## Questions
 
 Questions about the project? Connect with me!
