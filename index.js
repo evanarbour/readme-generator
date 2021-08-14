@@ -93,7 +93,7 @@ inquirer
     .then((answers) => {
         const readMePage = generateReadMe(answers);
 
-        fs.writeFile('readme.md', readMePage, (err) =>
+        fs.writeFile('README.md', readMePage, (err) =>
         err ? console.log(err) : console.log('README file created!') 
         );
     });
